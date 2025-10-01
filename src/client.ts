@@ -8,7 +8,7 @@ const socket = io(SERVER_URL);
 
 // دریافت جاب از سرور
 socket.on('new_jobs_insta_reel', async (instamedia) => {
-	console.log(`📩 Received job #${ job.id }:`, job);
+	console.log(`📩 Received job #${ instamedia.id }:`);
 
 	// شبیه‌سازی دانلود یا انجام تسک
 	let mCount = instamedia.length;
