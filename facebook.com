@@ -1,0 +1,25 @@
+fetch("https://www.facebook.com/api/graphql/", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "en-US,en;q=0.9",
+    "content-type": "application/x-www-form-urlencoded",
+    "priority": "u=1, i",
+    "sec-ch-prefers-color-scheme": "dark",
+    "sec-ch-ua": "\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\"",
+    "sec-ch-ua-full-version-list": "\"Chromium\";v=\"140.0.7339.133\", \"Not=A?Brand\";v=\"24.0.0.0\", \"Google Chrome\";v=\"140.0.7339.133\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-model": "\"\"",
+    "sec-ch-ua-platform": "\"macOS\"",
+    "sec-ch-ua-platform-version": "\"13.7.6\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin",
+    "x-asbd-id": "359341",
+    "x-fb-friendly-name": "ProfileCometTimelineListViewRootQuery",
+    "x-fb-lsd": "ecgnnut54k7C7wAdBHFiV7",
+    "cookie": "datr=QlzOaIzzb29QxjRUcvPtxWED; sb=QlzOaDJ-jPGiH1Rl2xZhGgeB; wd=1411x593; ps_l=1; ps_n=1; c_user=100040889585637; xs=41%3Azd5OuuC9J5I33A%3A2%3A1758354592%3A-1%3A-1; fr=0Sx3RhXTDnf8WhWg8.AWdICnSEWiZ32Qna7DBwehDq2qM7FuozJxW03hEH-fJZHZQdvlA.BozlxC..AAA.0.0.Bozlyj.AWeu9HLWpaT4phVqF0hL3K8q-VE; presence=C%7B%22t3%22%3A%5B%5D%2C%22utc3%22%3A1758354670808%2C%22v%22%3A1%7D",
+    "Referer": "https://www.facebook.com/profile.php?id=61577325593056&sk=followers"
+  },
+  "body": "av=100040889585637&__aaid=0&__user=100040889585637&__a=1&__req=1d&__hs=20351.HYP%3Acomet_pkg.2.1...0&dpr=2&__ccg=EXCELLENT&__rev=1027379896&__s=z7aprd%3A79029v%3Aokykyd&__hsi=7552075769622008600&__dyn=7xeUjGU5a5Q1ryaxG4Vp41twWwIxu13wFwhUngS3q2ibwNwnof8boG0x8bo6u3y4o2Gwfi0LVEtwMw6ywIK1Rwwwqo462mcwfG12wOx62G5Usw9m1YwBgK7o6C0Mo4G17yovwRwlE-U2exi4UaEW2au1jwUBwJK14xm3y11xfxmu3W3y261eBx_wHwfC2-awLyESE2KwwwOg2cwMwhEkxebwHwKG4UrwFg2fwxyo566k1FwgUjz89oeE-3WVU-4FqwIK6E4-mEbUaUaE7m11wo83KwHwOyUqxG1kw&__csr=g413QtMH993JED3aexQkznf7R99khn99df8G8yJOEa4cD9S-PMDfqH9rJaFyvTQAhWnnGLXAHl_hEyVlB8WKZanXAh-rHCWjHK8KuVeqGqhaFaQhFaiiQmluiiVXZKmdmXK9jgS9AAVy4-LBGaUsGazEGl4BgVaUyWQJSfDQmiudxrUSh2echEx7-cypVeQnCCzWZQdFKG-9yWz8C4KvxOicAAKaxJ169JadGcByoWham8x64oy2p7x5ei9J4ACximUC48DypUmAWxh2kmczGQu3mUK4u78V0Kx3y9u4mfwxzolgC6AnCx51q48jGha6EqCU6KUszU9pe68hwMxq9xG2-261tU5m2eu1jyWzUepEnzXx22G252oeawJwwwIwuokwHxa0gZ0aLwIF4CwHw866A1Rh42i2G1jwhEJ0Vg9k1iUJ0fV0Bwba1Cwr-6oR24E98hw8C58Ci1vgqw5yAAbwLwDzUK2qq4o6-5Udopxq1Qw0Xog0aSoF1u5o2Sw1Zjg1JU3lwtqw0ehBw76wWAa1UwjFo560b9wd2t04xwByo18o25wh80T-8g1yUAw1o8D80GE6C1cw3UC1SK027W1wxxcE1M80xdDykcw79yEOkw0iqg0gSwv81Q80oiO01bBa5k4V80yi0rR04Byo0YCEjw2tkEhw4Ew3fHwgE0vax9025oB38y0tSU3bg&__hsdp=g4ggOkV4y9Em8qaAzhWreihEx4wyyaCFd89hy2L8G8lFc4296cZ993j88hX79HcDaiMAxkGij4GDeGkgzYG8AIkCiyFh4sgdFMjOPn3kFG3l898BvMOh8sxk6diqEiP8H6ezzIF3EaymNcG7YlGMxqcAjMMGFi2-iFmWiFQtQyeSzH5dDzki8A6NagrBkotWpsQx4bWaAVtCCEyx6K9hPitx0MGA9W5O8xN2lhcgBigOFWQbXAg_ihiAXG64WNh9e9qBCyFadt78Ss82qByp8GqqehECqoUEF444iGoK84UkhAqmpUoAigANfDgNyCeyoAxESichGyFaxaGBCwBiizGKi9oS4qxt8wBQaKq8hqeS8r219P1iay98ogFDwCU8FWzEkyu68Pz9UCGx5DDAhoS4F8gw85pUC1kSAric26iElwhUjxieG2G0DE9AcwHw-gK48JwTxqdl190bF0DyUoxS2y6Q1b40IyUy5FoS4C25ueAzUckOomhmUgAgCgqUaAu1SHxC5UXg4qUkAgsxu48hyC5olr4xidgooy2RwDwtogw8y762EwUi71mm2C48G3u3O1cwoE3Fw42xy3yq6U25g3twmE2-w5iyysgeBGh06mz8ky8qwjFTwbmawzwde1Iw8W7K1cwbO0CUco7m583iwDwr82zwbq1vwkE7a8wXwn85C0u21cwde1YwMw7TwdKm0ja0TU2UwhUc83gzE0wu0-rwWy83exO0YU2CzE0y-09_w&__hblp=0qHgqDyE20wKDo7DwMyUdKm2G2q320xE27xi3m1xwqEqxS1kz836y8421lxi5eu2q1uUKFqwnU522O9wRwZwYx-6U4WU6i3y5A7UGfw961lwkUO3xDwxwb-1owlo4u4U9eq0Bob89Egig8U6C1fzqxi1Jwto4909m2q7-684iUW17x-8yKu1gDw9m2y17xS7onwho4u1ho1dU2hBw_wro1482fw8-9wq84KGCw43wbO6EcVU6G5UbUK78lG0IUtzE9UG682Lw4lwk8C1Gwj8rw4SwOw9C0SUbo4S1dwLUmK1qxi0QE9V86ui0z8hwCg2ewnUcZ7g25y8W2O1swcq1iw4wx63G0QUc8469wMzE7i7o2Kwjo5y0DEf9o1cE3vw9-68Sifg8UC2q1rwt8W1PwSw2588o8U14Eszoy0T82RwMwyzE5G1JGqA3u0wEmxubx2U88G0hG3646m8g7m1dyEiw&__sjsp=g4ggOkV4y9Em8qaAzhWreihEx4wyyaCFd89hy2L8G8lFcig9Ey5JirigQO25EAH94J3JUxPcGRbSHj4GDkxkdaOdDTQhAEGJbQHnA9jhAbx1eV58gEhmF-BSqhrgkxK2u48bASaxS74exh169CyK4bQh1u59ncxgNyVEzCiFUxQyeSzAdgsgixmUe9mnd8i4y9e48AwnUCfjF10MoAQSFAazojix2FV4dKh1MFeUbECbjz8thOdwzzU-qq5EC7Cp12cgcQp0MAgnxByQexSdAz4qdAxmmmq2l9aeyUBzohxF8wBzrzQ8ix1IrgNQ58oxybpU9K2GEboqzEuxCucho2Umu1Lg37wJw4-gK484m2hk0PE2kxJ0vUK3e1vwNwgQe6K0HUcoW1ywq62JIi3Nwdq482Boay3x8s5o0BG0hK0Uk0dl9N0kGh06mz8ky8qw4rwfu1Iw8W&__comet_req=15&fb_dtsg=NAfuFg_77R3TXrI9Nk1RssMWFM7b63eEONuNyHDAYUA-7hgPbDUUebg%3A41%3A1758354592&jazoest=25262&lsd=ecgnnut54k7C7wAdBHFiV7&__spin_r=1027379896&__spin_b=trunk&__spin_t=1758354662&__crn=comet.fbweb.CometProfileFollowersTabRoute&fb_api_caller_class=RelayModern&fb_api_req_friendly_name=ProfileCometTimelineListViewRootQuery&variables=%7B%22privacySelectorRenderLocation%22%3A%22COMET_STREAM%22%2C%22renderLocation%22%3A%22timeline%22%2C%22scale%22%3A2%2C%22userID%22%3A%22100007589709352%22%2C%22__relay_internal__pv__GHLShouldChangeSponsoredDataFieldNamerelayprovider%22%3Atrue%2C%22__relay_internal__pv__WorkCometIsEmployeeGKProviderrelayprovider%22%3Afalse%2C%22__relay_internal__pv__GroupsCometGroupChatLazyLoadLastMessageSnippetrelayprovider%22%3Afalse%7D&server_timestamps=true&doc_id=24638013122514509",
+  "method": "POST"
+});

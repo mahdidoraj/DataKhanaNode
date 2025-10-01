@@ -1,0 +1,32 @@
+{
+	"compilerOptions": {
+		"target": "ES2020",
+		"module": "commonjs",
+		"lib": [
+			"ES2020"
+		],
+		"outDir": "./dist",
+		"rootDir": "./src",
+		"strict": true,
+		"esModuleInterop": true,
+		// این خط را اضافه کنید
+		"allowSyntheticDefaultImports": true,
+		// این هم می‌تواند کمک کند
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"resolveJsonModule": true,
+		"typeRoots": [
+			"./node_modules/@types",
+		],
+		"types": [
+			"express"
+		]
+	},
+	"include": [
+		"src/**/*",
+	],
+	"exclude": [
+		"node_modules",
+		"dist"
+	]
+}
