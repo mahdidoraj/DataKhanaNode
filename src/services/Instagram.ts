@@ -1,6 +1,6 @@
 import { InstagramUtils } from './instagramUtils';
 import { requestService } from './requestService';
-
+import { downloadMedia } from './UploadFileToS3';
 
 export async function getPublicReels(id: any): Promise<any> {
 	let data = {
@@ -45,6 +45,26 @@ export async function getPublicReels(id: any): Promise<any> {
 	if (!(scrapedData && scrapedData.user && scrapedData.user.id))
 		return {statusCode: 401, statusText: 'user not in post'};
 
+	scrapedData.user.profile_pic_url = await downloadMedia(scrapedData.user.profile_pic_url);
+	let links = await addFiles(scrapedData);
+	scrapedData = {...links, ...scrapedData};
 	return scrapedData;
+}
+
+async function addFiles(data: any) {
+	if (data.media_type == 8) {
+		for (let datum of data.carousel_media) {
+			datum = await addFiles(datum);
+		}
+	} else if (data.media_type == 1) {
+		data.image_versions2.candidates[0].url = await addFile(data.image_versions2.candidates[0].url);
+	} else if (data.media_type == 2) {
+		data.video_versions[0].url = await addFile(data.video_versions[0].url);
+	}
+	return data;
+}
+
+async function addFile(data: any) {
+	return await downloadMedia(data);
 }
 
