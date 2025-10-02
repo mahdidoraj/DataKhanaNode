@@ -1,5 +1,4 @@
 import { io } from 'socket.io-client';
-import { InstaMedia } from './models';
 import { getPublicReels } from './services/Instagram';
 import { downloadMedia } from './services/UploadFileToS3';
 
@@ -19,14 +18,8 @@ socket.on('new_jobs_insta_reel', async (instamedia) => {
 		if (startMedia && startMedia.insta_code) {
 			tasks.push(
 				(async () => {
-					if (!await InstaMedia.findOne({
-						where: {
-							insta_id: startMedia.id,
-						},
-					})) {
 						console.log('start-media', startMedia.insta_code);
 						await getPublicReels(startMedia.insta_code);
-					}
 				})(),
 			);
 		}
@@ -35,14 +28,9 @@ socket.on('new_jobs_insta_reel', async (instamedia) => {
 		if (endMedia && endMedia !== startMedia && endMedia.insta_code) {
 			tasks.push(
 				(async () => {
-					if (!await InstaMedia.findOne({
-						where: {
-							insta_id: endMedia.id,
-						},
-					})) {
+
 						console.log('end-media', endMedia.insta_code);
 						await getPublicReels(endMedia.insta_code);
-					}
 				})(),
 			);
 		}
@@ -50,7 +38,7 @@ socket.on('new_jobs_insta_reel', async (instamedia) => {
 	}
 
 	// اطلاع به سرور که کار انجام شد
-	socket.emit('job_done', {jobId: job.id, status: 'done'});
+	// socket.emit('job_done', {jobId: job.id, status: 'done'});
 });
 socket.on('ping_server', () => {
 	console.log(`📩 Received ping from server`);
